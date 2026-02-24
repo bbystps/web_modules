@@ -1,0 +1,30 @@
+Web Modular - Reusable Codes
+
+Note* PHP, SQL and JS
+
+1. DB connection
+
+2. CRUD
+
+3. Registration Page
+4. Login Page / Logout /Sessions
+
+
+5. Email
+6. Image upload
+7. File upload
+8. 
+
+9. Cards
+7. Table
+	a. basic
+	b. with search
+	c. with hidden column
+	d. with buttons
+	e. with date search
+8. Charts
+	a. Line Chart
+	b. Bar Chart
+9. Session 
+	a. roles
+	b. otp
