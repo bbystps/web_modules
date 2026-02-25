@@ -27,5 +27,5 @@ try {
   echo json_encode(['status' => 'success', 'message' => 'User registered successfully']);
 } catch (PDOException $e) {
   http_response_code(500);
-  echo json_encode(['message' => 'Failed to register user']);
+  echo json_encode(['status' => 'failed', 'message' => 'Failed to register user']);
 }

@@ -19,7 +19,6 @@
   </form>
 </body>
 
-<!--  -->
 <script src="../../plugins/js/jquery.min.js"></script> <!-- Ensure jQuery is loaded before using it-->
 
 <script>
@@ -27,6 +26,7 @@
     $("#registerForm").on("submit", function(e) { // Use the ID to target the form
       e.preventDefault(); // Prevent the default form submission behavior
       console.log("Form submitted"); // Debugging: Check if the form submission is being captured
+
       $.ajax({
         type: "POST",
         url: "/web_modules/modules/registration/api/register_with_dup_val.php", // Ensure this path is correct based on your project structure

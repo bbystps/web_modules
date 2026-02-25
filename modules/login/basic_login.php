@@ -34,7 +34,7 @@
             console.log(response);
             if (response.status === "success") {
               alert("Login successful!");
-              window.location.href = "display_login.php";
+              // window.location.href = "/web_modules/modules/dashboard/index.php";
             } else {
               alert("Login failed: " + response.message);
             }

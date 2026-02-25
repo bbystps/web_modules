@@ -2,20 +2,21 @@ Web Modular - Reusable Codes
 
 Note* PHP, SQL and JS
 
-1. DB connection
+1. DB connection									-- DONE
 
-2. CRUD
+2. CRUD														-- Ongoing
 
-3. Registration Page
-4. Login Page / Logout /Sessions
+3. Registration Page							-- DONE
+4. Login Page / Logout /Sessions	-- DONE
 
+5. Registration page with OTP			--
 
-5. Email
-6. Image upload
-7. File upload
-8. 
+5. Email													--
+6. Image upload										--
+7. File upload										--
+8. Cards													--
 
-9. Cards
+9. 
 7. Table
 	a. basic
 	b. with search
