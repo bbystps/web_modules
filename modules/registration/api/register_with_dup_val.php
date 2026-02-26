@@ -22,7 +22,9 @@ try {
   }
   // ✅ CHECK FOR DUPLICATE USERNAME END
 
-  $stmt = $pdo->prepare("INSERT INTO accounts (username, email, password) VALUES (?, ?, ?)");
+  // ✅ If no duplicates found
+
+  $stmt = $pdo->prepare("INSERT INTO user_credential (username, email, password) VALUES (?, ?, ?)");
   $stmt->execute([$username, $email, password_hash($password, PASSWORD_DEFAULT)]);
   echo json_encode(['status' => 'success', 'message' => 'User registered successfully']);
 } catch (PDOException $e) {
