@@ -26,14 +26,14 @@ session_start();
 
             $.ajax({
                 type: "POST",
-                url: "/web_modules/modules/registration/otp/api/otp_verification.php",
+                url: "/web_modules/modules/otp/api/otp_verification.php",
                 data: $(this).serialize(),
                 dataType: "json",
                 success: function(response) {
 
                     if (response.status === "success") {
-                        alert("Registration completed!");
-                        window.location.href = "/web_modules/login.php";
+                        alert("Registration completed! Go to login page.");
+                        window.location.href = "registration_success.php";
                     } else {
                         alert(response.message);
                     }

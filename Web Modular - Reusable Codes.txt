@@ -9,23 +9,22 @@ Note* PHP, SQL and JS
 3. Registration Page							-- DONE
 4. Login Page / Logout /Sessions	-- DONE
 
-5. Registration page with OTP			--
+5. Registration page with OTP			-- DONE
 
-5. Email													--
-6. Image upload										--
-7. File upload										--
-8. Cards													--
+5. Email													-- DONE
+6. Image upload										-- DONE
+7. File upload										-- To do by pao
+8. Cards													-- 
 
-9. 
-7. Table
+9. Table
 	a. basic
 	b. with search
 	c. with hidden column
 	d. with buttons
 	e. with date search
-8. Charts
+10. Charts
 	a. Line Chart
 	b. Bar Chart
-9. Session 
+11. Session 
 	a. roles
 	b. otp

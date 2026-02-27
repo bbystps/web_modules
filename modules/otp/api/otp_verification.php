@@ -1,9 +1,11 @@
 <?php
 header('Content-Type: application/json');
 session_start();
-include '../../../db_conn/index.php';
+include '../../db_conn/index.php';
 
 $userOTP = trim($_POST['otp'] ?? '');
+
+$table_name  = 'accounts';
 
 if (!isset($_SESSION['otp'])) {
     echo json_encode(['status' => 'failed', 'message' => 'Session expired']);
@@ -18,7 +20,7 @@ if ($userOTP != $_SESSION['otp']) {
 try {
 
     $stmt = $pdo->prepare("
-        INSERT INTO user_credential (username, email, password)
+        INSERT INTO {$table_name} (username, email, password)
         VALUES (?, ?, ?)
     ");
 

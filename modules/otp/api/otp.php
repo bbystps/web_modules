@@ -2,17 +2,18 @@
 header('Content-Type: application/json');
 session_start();
 
-include '../../../db_conn/index.php';
+include '../../db_conn/index.php';
 
 $username = isset($_POST['username']) ? trim($_POST['username']) : '';
 $email    = isset($_POST['email']) ? trim($_POST['email']) : '';
 $password = isset($_POST['password']) ? trim($_POST['password']) : '';
 
+$table_name  = 'accounts';
 
 try {
 
     // 🔎 Check duplicate username
-    $stmt = $pdo->prepare("SELECT id FROM user_credential WHERE username = ?");
+    $stmt = $pdo->prepare("SELECT id FROM {$table_name} WHERE username = ?");
     $stmt->execute([$username]);
 
     if ($stmt->fetch()) {
@@ -24,7 +25,7 @@ try {
     }
 
     // 🔎 Check duplicate email
-    $stmtEmail = $pdo->prepare("SELECT id FROM user_credential WHERE email = ?");
+    $stmtEmail = $pdo->prepare("SELECT id FROM {$table_name} WHERE email = ?");
     $stmtEmail->execute([$email]);
 
     if ($stmtEmail->fetch()) {

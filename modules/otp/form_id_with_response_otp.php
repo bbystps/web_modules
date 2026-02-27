@@ -30,7 +30,7 @@
       // console.log("Form submitted"); // Debugging: Check if the form submission is being captured
       $.ajax({
         type: "POST",
-        url: "/web_modules/modules/registration/otp/api/otp.php", // Ensure this path is correct based on your project structure
+        url: "/web_modules/modules/otp/api/otp.php", // Ensure this path is correct based on your project structure
         data: $(this).serialize(), // cleaner & safer
         dataType: "json",
         success: function(response) {
@@ -39,7 +39,7 @@
           // handle json response
           if (response.status === "success") {
             alert("email / username have NO MATCH!"); // Show success message
-            window.location.href = "/web_modules/modules/registration/otp/otp_page.php";
+            window.location.href = "/web_modules/modules/otp/otp_page.php";
           } else {
             alert(response.message); // Show the error message from the server
           }
