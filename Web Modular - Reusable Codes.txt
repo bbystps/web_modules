@@ -14,13 +14,13 @@ Note* PHP, SQL and JS
 5. Email													-- DONE
 6. Image upload										-- DONE
 7. File upload										-- To do by pao
-8. Cards													-- 
+8. Cards													-- DONE
 
-9. Table
-	a. basic
-	b. with search
-	c. with hidden column
-	d. with buttons
+9. Table													-- DONE
+	a. basic												-- DONE
+	b. with search									-- DONE
+	c. with hidden column						-- DONE
+	d. with buttons									-- DONE
 	e. with date search
 10. Charts
 	a. Line Chart
